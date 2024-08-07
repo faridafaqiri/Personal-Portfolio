@@ -1,0 +1,5 @@
+live : https://faridafaqiri.github.io/Roman-numeral-converter/
+git: https://github.com/faridafaqiri/Roman-numeral-converter
+
+descritpion:
+This project is a simple web-based application that converts numbers to Roman numerals. The application takes a number input from the user, validates the input, and displays the corresponding Roman numeral. The valid range for conversion is from 1 to 3999, as Roman numerals do not have a standard representation for numbers outside this range.

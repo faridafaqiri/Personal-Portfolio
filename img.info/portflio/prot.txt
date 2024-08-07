@@ -1,0 +1,13 @@
+live: https://faridafaqiri.github.io/my-portfolio/
+github:https://github.com/faridafaqiri/my-portfolio
+
+description:
+Farida Faqiri's portfolio showcases my skills 
+as a front-end developer. It includes an introduction, 
+details about my background and education, certifications, 
+and a selection of recent projects like a survey form,
+ a tribute page, a technical documentation page, 
+and a product landing page. Each project demonstrates 
+her proficiency in HTML, CSS, and responsive design.
+ The portfolio also provides
+ contact information and links to her social media profiles.
