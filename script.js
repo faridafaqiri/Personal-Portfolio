@@ -37,7 +37,7 @@ const projects = [
   },
   {
     name: 'Roman numeral checker',
-    shortDescription: 'This project is a simple web-based application that converts numbers to Roman numerals. ',
+    shortDescription: 'This project is a simple web-based application that converts numbers to Roman numerals.',
     longDescription: 'This project is a simple web-based application that converts numbers to Roman numerals. The application takes a number input from the user, validates the input, and displays the corresponding Roman numeral. The valid range for conversion is from 1 to 3999, as Roman numerals do not have a standard representation for numbers outside this range.',
     image: './img.info/roman/demo.jpeg',
     technologies: 'HTML, CSS, JS',
@@ -64,38 +64,45 @@ const projects = [
   }
 ];
 
-// Append projects dynamically
-const projectsContainer = document.getElementById('projects-container');
-let carouselItem;
+// Function to render projects
+function renderProjects() {
+  const projectsContainer = document.getElementById('projects-container');
+  projectsContainer.innerHTML = ''; // Clear previous content
+  let carouselItem;
 
-projects.forEach((project, index) => {
-  if (index % 2 === 0) {
-    carouselItem = document.createElement('div');
-    carouselItem.className = 'carousel-item';
-    if (index === 0) carouselItem.classList.add('active');
-    projectsContainer.appendChild(carouselItem);
-    
-    const rowDiv = document.createElement('div');
-    rowDiv.className = 'row';
-    carouselItem.appendChild(rowDiv);
-  }
+  const isMobile = window.innerWidth < 768;
 
-  const projectDiv = document.createElement('div');
-  projectDiv.className = 'col-md-6 d-flex align-items-stretch';
-  projectDiv.innerHTML = `
-    <div class="card mb-4">
-      <img src="${project.image}" class="card-img-top" alt="${project.name}">
-      <div class="card-body">
-        <h5 class="card-title">${project.name}</h5>
-        <p class="card-text">${project.shortDescription}</p>
-        <button class="details" onclick="showProjectDetails('${project.name}')">Details</button>
+  projects.forEach((project, index) => {
+    // For desktop, create a new carousel item every 2 projects
+    // For mobile, create a new carousel item for each project
+    if (isMobile || index % 2 === 0) {
+      carouselItem = document.createElement('div');
+      carouselItem.className = 'carousel-item';
+      if (index === 0) carouselItem.classList.add('active');
+      projectsContainer.appendChild(carouselItem);
+
+      const rowDiv = document.createElement('div');
+      rowDiv.className = 'row';
+      carouselItem.appendChild(rowDiv);
+    }
+
+    const projectDiv = document.createElement('div');
+    projectDiv.className = 'col-12 col-md-6 d-flex'; // Responsive class for mobile and desktop
+    projectDiv.innerHTML = `
+      <div class="card mb-4">
+        <img src="${project.image}" class="card-img-top" alt="${project.name}">
+        <div class="card-body">
+          <h5 class="card-title">${project.name}</h5>
+          <p class="card-text">${project.shortDescription}</p>
+          <button class="details" onclick="showProjectDetails('${project.name}')">Details</button>
+        </div>
       </div>
-    </div>
-  `;
-  carouselItem.querySelector('.row').appendChild(projectDiv);
-});
+    `;
+    carouselItem.querySelector('.row').appendChild(projectDiv);
+  });
+}
 
-// Show project details in modal
+// Function to show project details in the modal
 function showProjectDetails(projectName) {
   const project = projects.find(p => p.name === projectName);
   document.getElementById('projectModalLabel').textContent = project.name;
@@ -110,6 +117,11 @@ function showProjectDetails(projectName) {
   projectModal.show();
 }
 
+// Initial render
+renderProjects();
+
+// Re-render projects on window resize
+window.addEventListener('resize', renderProjects);
 
 document.addEventListener('DOMContentLoaded', function() {
   const certificates = [
