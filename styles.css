@@ -458,6 +458,12 @@ i:hover {
   display: none;
 }
 
+dotlottie-player {
+  width: 300px;
+  height: 300px;
+  background: transparent; /* Apply the same background as inline style */
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     margin: 0;
