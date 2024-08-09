@@ -44,7 +44,7 @@ hr {
   line-height: 28.24px;
   color: #f5f5f5;
   position: relative;
-  font-family: 'Moon Dance'
+  font-family: 'Moon Dance';
 }
 
 .nav-link::after {
@@ -91,6 +91,7 @@ hr {
 
 .design {
   color: #d53302;
+  font-family: 'Merienda';
 }
 
 #conatac-design,
@@ -107,9 +108,9 @@ hr {
 }
 
 #conatac-design:hover,
+.details,
 .btn-cerf {
   background-color: #d53302;
-  color: #ecdbdb;
 }
 
 .getlink,
@@ -164,9 +165,9 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  line-height: 37.63px;
+  line-height: 35.63px;
   font-family: 'Nova Mono';
-  font-size: 24px;
+  font-size: 22px;
   padding-left: 160px;
   color: #ECDBDB;
   position: relative;
