@@ -90,7 +90,7 @@ function renderProjects() {
     projectDiv.className = 'col-12 col-md-6 d-flex'; // Responsive class for mobile and desktop
     projectDiv.innerHTML = `
       <div class="card mb-4">
-        <img src="${project.image}" class="card-img-top" alt="${project.name}">
+        <img src="${project.image}" class="card-img-top shared-img-style" alt="${project.name}">
         <div class="card-body">
           <h5 class="card-title">${project.name}</h5>
           <p class="card-text">${project.shortDescription}</p>
@@ -120,9 +120,6 @@ function showProjectDetails(projectName) {
 // Initial render
 renderProjects();
 
-// Re-render projects on window resize
-window.addEventListener('resize', renderProjects);
-
 document.addEventListener('DOMContentLoaded', function() {
   const certificates = [
     {
@@ -149,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const img = document.createElement('img');
     img.src = certificate.image;
     img.alt = `${certificate.name} Certification`; 
-    img.classList.add('cert-img-top');
+    img.classList.add('cert-img-top', 'shared-img-style');  // Apply the shared class here
 
     const nameDiv = document.createElement('div');
     nameDiv.classList.add('cert-name');
