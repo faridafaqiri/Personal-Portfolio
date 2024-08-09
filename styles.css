@@ -39,7 +39,6 @@ hr {
   text-decoration: none;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
-  font-family: Moon Dance;
   font-size: 25px;
   font-weight: 400;
   line-height: 28.24px;
@@ -112,15 +111,15 @@ hr {
   font-family: 'Moon Dance';
 }
 
-.get-in-touch:hover,
-.details {
-  background-color: #b13726;
-}
-
 .getlink,
 .details {
   text-decoration: none;
   color: #f5f5f5;
+}
+
+.get-in-touch:hover,
+.details {
+  background-color: #b13726;
 }
 
 #headline {
@@ -195,7 +194,7 @@ hr {
   top: 300px;
   left: 330px;
   gap: 0px;
-  opacity: 0px;
+
 }
 
 .icon {
@@ -204,7 +203,7 @@ hr {
   font-size: 38px;
   line-height: 58px;
   text-align: center;
-  color: #ECDBDB;
+  color: #ecdbdb;
 }
 
 i:hover {
@@ -230,7 +229,8 @@ i:hover {
   font-size: 22px;
 }
 
-.languages, .tools {
+.languages,
+.tools {
   top: 43%;
   left: 15%;
   transform: translate(-50%, -50%);
@@ -245,7 +245,8 @@ i:hover {
 .cert-name,
 .form-control,
 .btn,
-.design1 {
+.design1,
+.nav-link {
   font-family: 'Moon Dance';
 }
 
@@ -291,7 +292,7 @@ i:hover {
 }
 
 .card-text {
-  color: #BBB2B2;
+  color: #bbb2b2;
   font-size: 18px;
   font-weight: 400;
   line-height: 25.08px;
@@ -302,7 +303,7 @@ i:hover {
   font-size: 44px;
   font-weight: 400;
   line-height: 58.96px;
-  color: #ECDBDB;
+  color: #ecdbdb;
 }
 
 .modal-title,
@@ -312,7 +313,7 @@ i:hover {
 #proj,
 .card-text {
   color: #BBB2B2;
-  font-family: NovaMono;
+  font-family: 'NovaMono';
 }
 
 .card-img-top,
@@ -320,9 +321,12 @@ i:hover {
   width: 100%;
   max-width: 480px;
   border-radius: 30px;
-  border: 5px solid #B13726;
+  border: 5px solid #b13726;
   margin: 4%;
   height: 250px;
+  border-right: none;
+  border-bottom: none;
+
 }
 
 .card-img-top {
@@ -364,7 +368,7 @@ i:hover {
   width: 40%;
   height: 12%;
   background: #d53302;
-  color: #ECDBDB;
+  color: #ecdbdb;
   opacity: 0;
   transition: opacity 0.5s ease;
   margin-left: 28%;
@@ -398,7 +402,7 @@ i:hover {
   width: 70%;
   margin-left: 5rem;
   position: relative;
-  color: #ECDBDB;
+  color: #ecdbdb;
 }
 
 .contact-content {
@@ -431,7 +435,7 @@ i:hover {
 }
 
 .btn {
-  background: #B13726;
+  background: #b13726;
   border: none;
   border-radius: 40px;
   height: 66px;
@@ -458,7 +462,7 @@ i:hover {
   display: none;
 }
 
-dotlottie-player {
+.animation {
   width: 300px;
   height: 300px;
   background: transparent; /* Apply the same background as inline style */
