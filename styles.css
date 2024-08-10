@@ -44,7 +44,7 @@ hr {
   line-height: 28.24px;
   color: #f5f5f5;
   position: relative;
-  font-family: 'Moon Dance';
+  font-family: 'Moon Dance'
 }
 
 .nav-link::after {
@@ -91,7 +91,6 @@ hr {
 
 .design {
   color: #d53302;
-  font-family: 'Merienda';
 }
 
 #conatac-design,
@@ -100,17 +99,27 @@ hr {
   height: 40px;
   position: relative;
   display: inline-block;
+  border: 1.7px solid transparent;
+  border-image: linear-gradient(103.92deg, #D53302 -4.81%, #1F2029 94.86%);
+  border-image-slice: 2;
+  border-radius: 5px;
+  padding: 1.3rem;
+  padding-top: 0.5%;
+  font-family: 'Moon Dance', cursive; 
+  /*height: 40px;
+  position: relative;
+  display: inline-block;
   border: 1.7px solid #d53302;
   border-radius: 60px;
   padding: 1.3rem;
   padding-top: 0.5%;
-  font-family: 'Moon Dance';
+  font-family: 'Moon Dance';*/
 }
 
 #conatac-design:hover,
-.details,
 .btn-cerf {
   background-color: #d53302;
+  color: #ecdbdb;
 }
 
 .getlink,
@@ -165,9 +174,9 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  line-height: 35.63px;
+  line-height: 37.63px;
   font-family: 'Nova Mono';
-  font-size: 22px;
+  font-size: 24px;
   padding-left: 160px;
   color: #ECDBDB;
   position: relative;
@@ -432,8 +441,8 @@ i:hover {
 }
 
 .messagebox {
-  width: 250px;
-  height: auto;
+  width: 350px;
+  height: 500px;
   margin-right: 6rem;
 }
 
@@ -637,7 +646,7 @@ i:hover {
   }
   .messagebox {
     position: absolute;
-    top: -12rem;
+    top: -22rem;
     left: 60%;
     transform: translateX(-50%);
   }
@@ -670,7 +679,7 @@ i:hover {
 
   .titles {
     margin-bottom: 5rem;
-    text-align: left;
+    text-align: center;
     margin-left: -7rem;
   }
 
