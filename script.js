@@ -1,7 +1,3 @@
-// Import Bootstrap (if using a module bundler)
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
