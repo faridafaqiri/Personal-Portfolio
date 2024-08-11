@@ -107,7 +107,6 @@ hr {
   padding: 1.3rem;
   padding-top: 0.5%;
   font-family: 'Moon Dance', cursive; 
-
   /* height: 40px;
   position: relative;
   display: inline-block;
@@ -558,7 +557,7 @@ i:hover {
     background-repeat: no-repeat;
     height: 100vh;
   }
-
+  
   .container-contact {
     padding: 2rem;
     max-width: 600px;
