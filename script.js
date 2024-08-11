@@ -74,6 +74,8 @@ function renderProjects() {
   const isMobile = window.innerWidth < 768;
 
   projects.forEach((project, index) => {
+    // For desktop, create a new carousel item every 2 projects
+    // For mobile, create a new carousel item for each project
     if (isMobile || index % 2 === 0) {
       carouselItem = document.createElement('div');
       carouselItem.className = 'carousel-item';
@@ -86,7 +88,7 @@ function renderProjects() {
     }
 
     const projectDiv = document.createElement('div');
-    projectDiv.className = 'col-12 col-md-6 d-flex';
+    projectDiv.className = 'col-12 col-md-6 d-flex'; // Responsive class for mobile and desktop
     projectDiv.innerHTML = `
       <div class="card mb-4">
         <img src="${project.image}" class="card-img-top shared-img-style" alt="${project.name}">
@@ -104,22 +106,21 @@ function renderProjects() {
 // Function to show project details in the modal
 function showProjectDetails(projectName) {
   const project = projects.find((p) => p.name === projectName);
-  if (project) {
-    document.getElementById('projectModalLabel').textContent = project.name;
-    document.getElementById('project-image').src = project.image;
-    document.getElementById('project-long-description').textContent = project.longDescription;
-    document.getElementById('project-technologies').textContent = project.technologies;
-    document.getElementById('project-live-link').href = project.liveLink;
-    document.getElementById('project-source-link').href = project.sourceLink;
+  document.getElementById('projectModalLabel').textContent = project.name;
+  document.getElementById('project-image').src = project.image;
+  document.getElementById('project-long-description').textContent = project.longDescription;
+  document.getElementById('project-technologies').textContent = project.technologies;
+  document.getElementById('project-live-link').href = project.liveLink;
+  document.getElementById('project-source-link').href = project.sourceLink;
 
-    // Show the modal using Bootstrap's modal methods
-    const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
-    projectModal.show();
-  }
+  // Show the modal using Bootstrap's modal methods
+  const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
+  projectModal.show();
 }
 
 // Initial render
 renderProjects();
+document.getElementById('projectButton').addEventListener('click', showProjectDetails);
 
 document.addEventListener('DOMContentLoaded', () => {
   const certificates = [
