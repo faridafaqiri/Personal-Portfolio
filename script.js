@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
@@ -181,9 +180,11 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
     localStorage.setItem('contactFormData', JSON.stringify(formData));
     // Reset form
     event.target.reset();
-    alert('Form submitted successfully!');
+    // Replace alert with a user-friendly notification
+    document.getElementById('form-feedback').textContent = 'Form submitted successfully!';
   } else {
-    alert('All fields are required.');
+    // Replace alert with a user-friendly notification
+    document.getElementById('form-feedback').textContent = 'All fields are required.';
   }
 });
 
