@@ -1,4 +1,4 @@
-document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
     const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
@@ -7,6 +7,7 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
     bsCollapse.hide();
   });
 });
+
 const projects = [
   {
     name: 'Cash Register',
@@ -29,7 +30,7 @@ const projects = [
   {
     name: 'Pokémon',
     shortDescription: 'The Pokémon Search App is a web application that allows users to search for Pokémon by name or ID.',
-    longDescription: 'The Pokémon Search App is a web application that allows users to search for Pokémon by name or ID.Upon entering the Pokémon name or ID, the app displays detailed base stats including HP, Attack, Defense, Special Attack, Special Defense, and Speed, as well as proficiency in API integration to fetch and display dynamic data.',
+    longDescription: 'The Pokémon Search App is a web application that allows users to search for Pokémon by name or ID. Upon entering the Pokémon name or ID, the app displays detailed base stats including HP, Attack, Defense, Special Attack, Special Defense, and Speed, as well as proficiency in API integration to fetch and display dynamic data.',
     image: './img.info/pokemon/Capture.JPG',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/pokemon-search-app/',
@@ -56,7 +57,7 @@ const projects = [
   {
     name: 'Product Landing Page',
     shortDescription: 'The Product Landing Page project is a promotional site for "Tolo Fast Food," featuring a clean and modern design.',
-    longDescription: 'The Product Landing Page project is a promotional site for "Tolo Fast Food," featuring a clean and modern design.It includes sections for menu items, contact information, and a special offer for free home delivery. Users can browse through various food options like pizza, kabab, and burgers, and access contact details for placing orders. and responsive web design, emphasizing user-friendly navigation and a visually appealing layout.',
+    longDescription: 'The Product Landing Page project is a promotional site for "Tolo Fast Food," featuring a clean and modern design. It includes sections for menu items, contact information, and a special offer for free home delivery. Users can browse through various food options like pizza, kabab, and burgers, and access contact details for placing orders. and responsive web design, emphasizing user-friendly navigation and a visually appealing layout.',
     image: './img.info/product/p2.JPG',
     technologies: 'HTML, CSS',
     liveLink: 'https://faridafaqiri.github.io/product-landing-page/',
@@ -104,7 +105,7 @@ function renderProjects() {
 
 // Function to show project details in the modal
 function showProjectDetails(projectName) {
-  const project = projects.find(p => p.name === projectName);
+  const project = projects.find((p) => p.name === projectName);
   document.getElementById('projectModalLabel').textContent = project.name;
   document.getElementById('project-image').src = project.image;
   document.getElementById('project-long-description').textContent = project.longDescription;
@@ -136,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const certificatesContainer = document.getElementById('certificates-container');
 
-  certificates.forEach(certificate => {
+  certificates.forEach((certificate) => {
     const colDiv = document.createElement('div');
     colDiv.classList.add('col-md-6', 'mb-4');
 
@@ -145,8 +146,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const img = document.createElement('img');
     img.src = certificate.image;
-    img.alt = `${certificate.name} Certification`; 
-    img.classList.add('cert-img-top', 'shared-img-style');  // Apply the shared class here
+    img.alt = `${certificate.name} Certification`;
+    img.classList.add('cert-img-top', 'shared-img-style'); // Apply the shared class here
 
     const nameDiv = document.createElement('div');
     nameDiv.classList.add('cert-name');
@@ -174,14 +175,14 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
   if (name && email && message) {
-      // Save data to local storage
-      const formData = { name, email, message };
-      localStorage.setItem('contactFormData', JSON.stringify(formData));
-      // Reset form
-      this.reset();
-      alert('Form submitted successfully!');
+    // Save data to local storage
+    const formData = { name, email, message };
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
+    // Reset form
+    this.reset();
+    alert('Form submitted successfully!');
   } else {
-      alert('All fields are required.');
+    alert('All fields are required.');
   }
 });
 
@@ -189,9 +190,9 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 document.addEventListener('DOMContentLoaded', function () {
   const savedData = localStorage.getItem('contactFormData');
   if (savedData) {
-      const { name, email, message } = JSON.parse(savedData);
-      document.getElementById('name').value = name;
-      document.getElementById('email').value = email;
-      document.getElementById('message').value = message;
+    const { name, email, message } = JSON.parse(savedData);
+    document.getElementById('name').value = name;
+    document.getElementById('email').value = email;
+    document.getElementById('message').value = message;
   }
 });

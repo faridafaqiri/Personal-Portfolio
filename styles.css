@@ -331,7 +331,6 @@ i:hover {
 .modal-title,
 #project-long-description,
 .modal-body p,
-.cert-link-overlay,
 #proj,
 .card-text {
   color: #bbb2b2;
@@ -586,7 +585,7 @@ i:hover {
 
   .modal-content {
     width: 80%;
-    height: 80%;
+    height: auto;
     max-width: 1000px;
     max-height: 600px;
     position: fixed;
