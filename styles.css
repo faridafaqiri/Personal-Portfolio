@@ -106,7 +106,8 @@ hr {
   border-radius: 5px;
   padding: 1.3rem;
   padding-top: 0.5%;
-  font-family: 'Moon Dance', cursive; 
+  font-family: 'Moon Dance', cursive;
+
   /* height: 40px;
   position: relative;
   display: inline-block;
@@ -354,7 +355,7 @@ i:hover {
 }
 
 #certificates {
-  background-image: url(./img.info/Group\ \(2\).png);
+  background-image: url(./img.info/notebook.png);
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -406,7 +407,7 @@ i:hover {
 }
 
 #contact {
-  background-image: url(./img.info/Vector\ \(1\).png);
+  background-image: url(./img.info/tree.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -528,7 +529,7 @@ i:hover {
   .social {
     position: relative;
   }
-  
+
   #about--social-links {
     display: flex;
     flex-direction: column;
@@ -548,7 +549,7 @@ i:hover {
   }
 
   .contacts {
-    background: url(./img.info/Subtract\ \(2\).png);
+    background: url(./img.info/contact.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -557,7 +558,7 @@ i:hover {
     background-repeat: no-repeat;
     height: 100vh;
   }
-  
+
   .container-contact {
     padding: 2rem;
     max-width: 600px;
