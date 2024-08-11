@@ -1,3 +1,4 @@
+
 document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
@@ -120,7 +121,6 @@ function showProjectDetails(projectName) {
 
 // Initial render
 renderProjects();
-document.getElementById('projectButton').addEventListener('click', showProjectDetails);
 
 document.addEventListener('DOMContentLoaded', () => {
   const certificates = [
@@ -163,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
     cardDiv.appendChild(img);
     cardDiv.appendChild(nameDiv);
     cardDiv.appendChild(linkOverlay);
-
     colDiv.appendChild(cardDiv);
     certificatesContainer.appendChild(colDiv);
   });
@@ -181,11 +180,9 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
     localStorage.setItem('contactFormData', JSON.stringify(formData));
     // Reset form
     event.target.reset();
-    // Replace alert with a user-friendly notification
-    document.getElementById('form-feedback').textContent = 'Form submitted successfully!';
+    alert('Form submitted successfully!');
   } else {
-    // Replace alert with a user-friendly notification
-    document.getElementById('form-feedback').textContent = 'All fields are required.';
+    alert('All fields are required.');
   }
 });
 
