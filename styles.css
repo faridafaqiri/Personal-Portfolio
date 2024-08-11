@@ -585,9 +585,9 @@ i:hover {
 
   .modal-content {
     width: 80%;
-    height: auto;
+    height: 70%;
     max-width: 1000px;
-    max-height: 600px;
+    max-height: 700px;
     position: fixed;
     top: 50%;
     left: 50%;

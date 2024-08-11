@@ -16,7 +16,7 @@ const projects = [
     image: './img.info/cash/Capture.JPG',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/cash-register/',
-    sourceLink: 'https://github.com/faridafaqiri/cash-register'
+    sourceLink: 'https://github.com/faridafaqiri/cash-register',
   },
   {
     name: 'Palindrome Checker',
@@ -25,7 +25,7 @@ const projects = [
     image: './img.info/palindrom/Capture.jpeg',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/Palindrome-Checker/',
-    sourceLink: 'https://github.com/faridafaqiri/Palindrome-Checker'
+    sourceLink: 'https://github.com/faridafaqiri/Palindrome-Checker',
   },
   {
     name: 'Pokémon',
@@ -34,7 +34,7 @@ const projects = [
     image: './img.info/pokemon/Capture.JPG',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/pokemon-search-app/',
-    sourceLink: 'https://github.com/faridafaqiri/pokemon-search-app'
+    sourceLink: 'https://github.com/faridafaqiri/pokemon-search-app',
   },
   {
     name: 'Roman numeral checker',
@@ -43,7 +43,7 @@ const projects = [
     image: './img.info/roman/demo.jpeg',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/Roman-numeral-converter/',
-    sourceLink: 'https://github.com/faridafaqiri/Roman-numeral-converter'
+    sourceLink: 'https://github.com/faridafaqiri/Roman-numeral-converter',
   },
   {
     name: 'Telephone Number Validator',
@@ -52,7 +52,7 @@ const projects = [
     image: './img.info/telephone/Capture.JPG',
     technologies: 'HTML, CSS, JS',
     liveLink: 'https://faridafaqiri.github.io/telephone-number-validator/',
-    sourceLink: 'https://github.com/faridafaqiri/telephone-number-validator'
+    sourceLink: 'https://github.com/faridafaqiri/telephone-number-validator',
   },
   {
     name: 'Product Landing Page',
@@ -61,8 +61,8 @@ const projects = [
     image: './img.info/product/p2.JPG',
     technologies: 'HTML, CSS',
     liveLink: 'https://faridafaqiri.github.io/product-landing-page/',
-    sourceLink: 'https://github.com/faridafaqiri/product-landing-page'
-  }
+    sourceLink: 'https://github.com/faridafaqiri/product-landing-page',
+  },
 ];
 
 // Function to render projects
@@ -121,17 +121,17 @@ function showProjectDetails(projectName) {
 // Initial render
 renderProjects();
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const certificates = [
     {
       name: 'JavaScript Algorithms and Data Structure',
       image: './img.info/certific/Capture.JPG',
-      link: 'https://www.freecodecamp.org/certification/fccdd7d8690-d023-4481-b4ed-badc665c7da7/javascript-algorithms-and-data-structures-v8'
+      link: 'https://www.freecodecamp.org/certification/fccdd7d8690-d023-4481-b4ed-badc665c7da7/javascript-algorithms-and-data-structures-v8',
     },
     {
       name: 'Responsive Web Design',
       image: './img.info/certific/responsive.JPG',
-      link: 'https://www.freecodecamp.org/certification/fccdd7d8690-d023-4481-b4ed-badc665c7da7/responsive-web-design'
+      link: 'https://www.freecodecamp.org/certification/fccdd7d8690-d023-4481-b4ed-badc665c7da7/responsive-web-design',
     },
   ];
 
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Contact form validation and local storage
-document.getElementById('contact-form').addEventListener('submit', function (event) {
+document.getElementById('contact-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -179,7 +179,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     const formData = { name, email, message };
     localStorage.setItem('contactFormData', JSON.stringify(formData));
     // Reset form
-    this.reset();
+    event.target.reset();
     alert('Form submitted successfully!');
   } else {
     alert('All fields are required.');
@@ -187,7 +187,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 });
 
 // Load data from local storage
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const savedData = localStorage.getItem('contactFormData');
   if (savedData) {
     const { name, email, message } = JSON.parse(savedData);
