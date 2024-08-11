@@ -1,5 +1,6 @@
 /* General Styles */
-body, .modal-content{
+body,
+.modal-content {
   background-image: url(./img.info//bg6.png);
   background-size: cover;
   color: #ecdbdb;
@@ -44,7 +45,7 @@ hr {
   line-height: 28.24px;
   color: #f5f5f5;
   position: relative;
-  font-family: 'Moon Dance'
+  font-family: 'Moon Dance', cursive;
 }
 
 .nav-link::after {
@@ -100,20 +101,21 @@ hr {
   position: relative;
   display: inline-block;
   border: 1.7px solid transparent;
-  border-image: linear-gradient(103.92deg, #D53302 -4.81%, #1F2029 94.86%);
+  border-image: linear-gradient(103.92deg, #d53302 -4.81%, #1f2029 94.86%);
   border-image-slice: 2;
   border-radius: 5px;
   padding: 1.3rem;
   padding-top: 0.5%;
   font-family: 'Moon Dance', cursive; 
-  /*height: 40px;
+
+  /* height: 40px;
   position: relative;
   display: inline-block;
   border: 1.7px solid #d53302;
   border-radius: 60px;
   padding: 1.3rem;
   padding-top: 0.5%;
-  font-family: 'Moon Dance';*/
+  font-family: 'Moon Dance'; */
 }
 
 #conatac-design:hover,
@@ -138,14 +140,14 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  font-family: 'Nova Mono';
+  font-family: 'Nova Mono', monospace;
   font-size: 24px;
   font-weight: 400;
   margin: 0% 6%;
 }
 
 .jumbotron-heading {
-  font-family: 'Moon Dance';
+  font-family: 'Nova Mono', monospace;
   font-size: 30px;
   font-weight: 400;
   line-height: 40.2px;
@@ -153,7 +155,7 @@ hr {
 }
 
 .short-info {
-  font-family: 'Nova Mono';
+  font-family: 'Nova Mono', monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 25.08px;
@@ -175,10 +177,10 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   line-height: 37.63px;
-  font-family: 'Nova Mono';
+  font-family: 'Nova Mono', monospace;
   font-size: 24px;
   padding-left: 160px;
-  color: #ECDBDB;
+  color: #ecdbdb;
   position: relative;
 }
 
@@ -260,7 +262,7 @@ i:hover {
 .form-control,
 .btn,
 .design1 {
-  font-family: 'Moon Dance';
+  font-family: 'Moon Dance', cursive;
 }
 
 .html5 {
@@ -333,7 +335,7 @@ i:hover {
 #proj,
 .card-text {
   color: #bbb2b2;
-  font-family: 'Nova Mono';
+  font-family: 'Nova Mono', monospace;
 }
 
 .shared-img-style {
@@ -348,6 +350,8 @@ i:hover {
 .card-img-top {
   border-right: none;
   border-bottom: none;
+  height: 300px;
+  width: 500px;
 }
 
 #certificates {
@@ -372,11 +376,6 @@ i:hover {
 
 .carousel-control-next {
   right: -55px;
-}
-
-.cert-img-top {
-  height: 300px;
-  width: 500px;
 }
 
 .cert-card {
@@ -461,7 +460,7 @@ i:hover {
   border: none;
   border-radius: 40px;
   font-size: 27px;
-  color: #ECDBDB;
+  color: #ecdbdb;
 }
 
 .btn {
@@ -525,8 +524,8 @@ i:hover {
     display: flex;
     flex-direction: column;
     background-position: left bottom;
-
   }
+
   .social {
     position: relative;
   }
@@ -538,6 +537,7 @@ i:hover {
     top: 400px;
     left: 500px;
   }
+
   .img {
     width: 600px;
     margin-top: 65px;
@@ -583,7 +583,7 @@ i:hover {
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  
+
   .modal-content {
     width: 80%;
     height: 80%;
