@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
@@ -182,7 +181,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Certificates Container not found');
   }
 });
-
 
 // Contact form validation and local storage
 document.getElementById('contact-form').addEventListener('submit', (event) => {
