@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.navbar-nav .nav-link').forEach((link) => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.getElementById('navbarNav');
@@ -75,8 +74,6 @@ function renderProjects() {
   const isMobile = window.innerWidth < 768;
 
   projects.forEach((project, index) => {
-    // For desktop, create a new carousel item every 2 projects
-    // For mobile, create a new carousel item for each project
     if (isMobile || index % 2 === 0) {
       carouselItem = document.createElement('div');
       carouselItem.className = 'carousel-item';
@@ -122,7 +119,20 @@ function showProjectDetails(projectName) {
 // Initial render
 renderProjects();
 
+// Handle projectButton click after rendering
 document.addEventListener('DOMContentLoaded', () => {
+  // Ensure projectButton exists
+  const projectButton = document.getElementById('projectButton');
+  if (projectButton) {
+    projectButton.addEventListener('click', () => {
+      console.log('Project Button Clicked');
+      showProjectDetails(''); // Call with an empty string or handle appropriately
+    });
+  } else {
+    console.error('Project Button not found');
+  }
+
+  // Render certificates
   const certificates = [
     {
       name: 'JavaScript Algorithms and Data Structure',
@@ -138,34 +148,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const certificatesContainer = document.getElementById('certificates-container');
 
-  certificates.forEach((certificate) => {
-    const colDiv = document.createElement('div');
-    colDiv.classList.add('col-md-6', 'mb-4');
+  if (certificatesContainer) {
+    certificates.forEach((certificate) => {
+      const colDiv = document.createElement('div');
+      colDiv.classList.add('col-md-6', 'mb-4');
 
-    const cardDiv = document.createElement('div');
-    cardDiv.classList.add('cert-card', 'position-relative');
+      const cardDiv = document.createElement('div');
+      cardDiv.classList.add('cert-card', 'position-relative');
 
-    const img = document.createElement('img');
-    img.src = certificate.image;
-    img.alt = `${certificate.name} Certification`;
-    img.classList.add('cert-img-top', 'shared-img-style'); // Apply the shared class here
+      const img = document.createElement('img');
+      img.src = certificate.image;
+      img.alt = `${certificate.name} Certification`;
+      img.classList.add('cert-img-top', 'shared-img-style');
 
-    const nameDiv = document.createElement('div');
-    nameDiv.classList.add('cert-name');
-    nameDiv.textContent = certificate.name;
+      const nameDiv = document.createElement('div');
+      nameDiv.classList.add('cert-name');
+      nameDiv.textContent = certificate.name;
 
-    const linkOverlay = document.createElement('a');
-    linkOverlay.href = certificate.link;
-    linkOverlay.target = '_blank';
-    linkOverlay.classList.add('cert-link-overlay', 'btn', 'btn-cert');
-    linkOverlay.textContent = 'View Certification';
+      const linkOverlay = document.createElement('a');
+      linkOverlay.href = certificate.link;
+      linkOverlay.target = '_blank';
+      linkOverlay.classList.add('cert-link-overlay', 'btn', 'btn-cert');
+      linkOverlay.textContent = 'View Certification';
 
-    cardDiv.appendChild(img);
-    cardDiv.appendChild(nameDiv);
-    cardDiv.appendChild(linkOverlay);
-    colDiv.appendChild(cardDiv);
-    certificatesContainer.appendChild(colDiv);
-  });
+      cardDiv.appendChild(img);
+      cardDiv.appendChild(nameDiv);
+      cardDiv.appendChild(linkOverlay);
+      colDiv.appendChild(cardDiv);
+      certificatesContainer.appendChild(colDiv);
+    });
+  } else {
+    console.error('Certificates Container not found');
+  }
 });
 
 // Contact form validation and local storage
