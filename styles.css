@@ -169,7 +169,7 @@ hr {
 
 #about {
   background-image: url(./img.info/f13.png);
-  background-position: left 20rem;
+  background-position: left 10rem;
   background-repeat: no-repeat;
   background-size: 400px auto;
   margin-top: 60px;
@@ -417,8 +417,7 @@ i:hover {
   background-image: url(./img.info/Subtract.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
-  margin-left: 5rem;
+  background-size: 100% 100%;
 }
 
 .container-contact {
@@ -426,7 +425,6 @@ i:hover {
   align-items: center;
   padding: 2rem;
   border-radius: 40px;
-  width: 70%;
   margin-left: 5rem;
   position: relative;
   color: #ecdbdb;
@@ -435,7 +433,7 @@ i:hover {
 .contact-content {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .messagebox {
@@ -460,6 +458,7 @@ i:hover {
   border-radius: 40px;
   font-size: 27px;
   color: #ecdbdb;
+  width: 100%;
 }
 
 .btn {
@@ -743,9 +742,5 @@ i:hover {
     overflow: auto;
   }
 
-  .container-contact {
-    padding: 2rem;
-    width: 55%;
-    position: relative;
-  }
+
 }
