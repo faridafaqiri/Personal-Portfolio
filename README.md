@@ -26,7 +26,7 @@ This project was brought to life with the combined efforts of talented designers
 
 ## Live Deployment
 
-Check out the live version here: 
+Check out the live version here: https://faridafaqiri.github.io/Personal-Portfolio/
 
 ## Technologies Used 🛠
 
