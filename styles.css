@@ -415,7 +415,6 @@ i:hover {
   margin-top: 4rem;
   margin-bottom: 6rem;
   background-image: url(./img.info/Subtract.png);
-  background-size: contain;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -741,6 +740,5 @@ i:hover {
     z-index: 1050;
     overflow: auto;
   }
-
 
 }
