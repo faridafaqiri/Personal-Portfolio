@@ -1,0 +1,5 @@
+live: https://faridafaqiri.github.io/Palindrome-Checker/
+git: https://github.com/faridafaqiri/Palindrome-Checker
+
+description:
+The Palindrome Checker project is a web application that allows users to input text and check if it is a palindrome. A palindrome is a word, phrase, or sequence that reads the same backward as forward, ignoring spaces, punctuation, and capitalization. This project highlights the developer's skills in creating interactive web applications using HTML, CSS, and JavaScript, and emphasizes their ability to implement logicfor text analysis and validation.

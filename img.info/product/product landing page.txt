@@ -1,0 +1,13 @@
+github: https://github.com/faridafaqiri/product-landing-page
+live:https://faridafaqiri.github.io/product-landing-page/
+
+description:
+The Product Landing Page project is a promotional site for 
+"Tolo Fast Food," featuring a clean and modern design.
+ It includes sections for menu items, contact information,
+ and a special offer for free home delivery. 
+Users can browse through various food options like pizza, kabab, 
+and burgers, and access contact details for placing orders. 
+This project showcases skills in HTML, CSS, 
+and responsive web design, emphasizing user-friendly
+ navigation and a visually appealing layout.
