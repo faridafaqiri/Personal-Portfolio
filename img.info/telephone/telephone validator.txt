@@ -1,0 +1,9 @@
+live: https://faridafaqiri.github.io/telephone-number-validator/
+git: https://github.com/faridafaqiri/telephone-number-validator
+
+description:
+The telephone number validator project  is a specialized tool 
+designed to validate and format US phone numbers. 
+By entering a phone number into the tool, 
+users can verify if it meets the correct format and
+ structure expected for US telephone numbers. 

@@ -1,0 +1,13 @@
+live: https://faridafaqiri.github.io/cash-register/
+git : https://github.com/faridafaqiri/cash-register
+
+description:
+The Cash Register project is a web application designed
+ to simulate a simple cash register. It allows users to
+ input purchase amounts and payments, then calculates 
+and displays the change due. The interface includes
+ buttons for adding purchases and clearing inputs,
+ ensuring a user-friendly experience. This project 
+showcases fundamental web development skills, including 
+HTML, CSS, and JavaScript, and demonstrates the ability 
+to create interactive and functional web applications.

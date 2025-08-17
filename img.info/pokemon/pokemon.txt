@@ -1,0 +1,11 @@
+git: https://github.com/faridafaqiri/pokemon-search-app
+live: https://faridafaqiri.github.io/pokemon-search-app/
+
+description:
+The Pokémon Search App is a web application 
+that allows users to search for Pokémon by name or ID.
+ Upon entering the Pokémon's name or ID, the app displays 
+detailed base stats including HP, Attack, Defense, Special Attack,
+ Special Defense, and Speed. This project highlights skills in
+ web development using HTML, CSS, and JavaScript, as well as
+ proficiency in API integration to fetch and display dynamic data.
